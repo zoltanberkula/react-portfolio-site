@@ -1,12 +1,12 @@
 import Head from "next/head";
 import { useState } from "react";
-
+//COMPONENTS_BEGIN
 import { Navbar } from "./components/Navbar";
 import { Introduction } from "./components/Introduction";
 import { Skills } from "./components/Skills";
 import { Portfolio } from "./components/Portfolio";
-
-export default function Home() {
+//COMPONENTS_END
+export default function Resume() {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className={darkMode ? "dark" : ""}>

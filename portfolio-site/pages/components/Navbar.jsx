@@ -1,6 +1,4 @@
 import React from 'react';
-import { Component } from 'react';
-
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
 export const Navbar = (props) => {

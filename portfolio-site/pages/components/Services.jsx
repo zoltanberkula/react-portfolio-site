@@ -1,9 +1,10 @@
 import React from 'react';
 import Image from "next/image";
+//FILES_BEGIN
 import design from "../../public/design.png";
 import code from "../../public/code.png";
 import consulting from "../../public/consulting.png";
-
+//FILES_END
 export const Services = () => {
     return (
         <section>

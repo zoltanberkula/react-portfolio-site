@@ -1,14 +1,13 @@
 import React from 'react';
-import { Component } from 'react';
 import Image from "next/image";
 import {
   AiFillLinkedin,
   AiFillInstagram,
   AiFillGithub,
 } from "react-icons/ai";
-
+//FILES_BEGIN
 import profilePic from "../../public/dev-zolko.png";
-
+//FILES_END
 export const Introduction = (props) => {
     return (
       <div>
