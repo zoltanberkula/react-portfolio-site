@@ -1,10 +1,10 @@
 import Head from "next/head";
 import { useState } from "react";
 //COMPONENTS_BEGIN
-import { Navbar } from "./components/Navbar";
-import { Introduction } from "./components/Introduction";
-import { Skills } from "./components/Skills";
-import { Portfolio } from "./components/Portfolio";
+import  Navbar  from "./components/Navbar";
+import  Introduction from "./components/Introduction";
+import  Skills  from "./components/Skills";
+import  Portfolio  from "./components/Portfolio";
 //COMPONENTS_END
 export default function Resume() {
   const [darkMode, setDarkMode] = useState(false);

@@ -8,13 +8,13 @@ import web4 from "../../public/web4.png";
 import web5 from "../../public/web5.png";
 import web6 from "../../public/web6.png";
 //FILES_END
-export const Portfolio = () => {
+export default function Portfolio() {
     return (
         <section>
           <div>
             <h3 className="text-3xl py-1">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
-              Since the beggining of my journey as a freelance developer, I've
+              Since the beggining of my journey as a freelance developer, I&aposve
               done remote work for
               <span className="text-teal-500"> agencies</span> consulted for{" "}
               <span className="text-teal-500">startups</span> and collaborated

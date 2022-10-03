@@ -5,7 +5,7 @@ import design from "../../public/design.png";
 import code from "../../public/code.png";
 import consulting from "../../public/consulting.png";
 //FILES_END
-export const Skills = (props) => {
+export default function Skills(props)  {
     return (
         <section>
         <div>

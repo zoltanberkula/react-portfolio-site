@@ -8,7 +8,7 @@ import {
 //FILES_BEGIN
 import profilePic from "../../public/dev-zolko.png";
 //FILES_END
-export const Introduction = (props) => {
+export default function Introduction(props) {
     return (
       <div>
           <div className="text-center p-10">

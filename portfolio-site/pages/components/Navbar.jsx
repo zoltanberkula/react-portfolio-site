@@ -1,7 +1,7 @@
 import React from 'react';
 import { BsFillMoonStarsFill } from "react-icons/bs";
 
-export const Navbar = (props) => {
+export default function Navbar(props)  {
     return (
         <nav className="py-10 mb-12 flex justify-between">
         <h1 className="text-xl font-burtons">zoltanberkula</h1>
