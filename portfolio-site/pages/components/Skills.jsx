@@ -50,7 +50,7 @@ export default function Skills(props)  {
               Cloud, Backend & DevOps
             </h3>
             <p className="py-2 ">
-              Creating a Cloud Infrastructure used for data telemetry and remote control using services provided by GCP, easy infrastructure deploy using IaC.
+              Creating a Cloud Infrastructure used for data telemetry and remote control using services provided by GCP, easy infrastructure deployment using IaC.
             </p>
             <h4 className="py-4 text-teal-600">Technology Stack</h4>
             <p className="text-gray-800 py-1">Google Cloud Platform</p>
