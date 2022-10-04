@@ -16,11 +16,6 @@ export default function Skills(props)  {
             with talented people to develop <span className="text-teal-500"> hardware, </span><span className="text-teal-500">software</span> and <span className="text-teal-500">firmware </span>for products intended for both business
             and consumer use
           </p>
-          <p className="text-md py-2 leading-8 text-gray-800">
-            {" "}
-            I offer from a wide range of services, including brand design,
-            programming and teaching.
-          </p>
         </div>
         <div className="lg:flex gap-10">
           <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white dark:text-black">
@@ -42,7 +37,7 @@ export default function Skills(props)  {
               Web Development
             </h3>
             <p className="py-2 ">
-              Developing a dynamic web app for data telemetry and visualization with backend and close to hardware modules implemented from scratch.
+              Developing a dynamic web app for data telemetry and visualization with backend using close to hardware modules implemented from scratch.
             </p>
             <h4 className="py-4 text-teal-600">Technology Stack</h4>
             <p className="text-gray-800 py-1">Node.js</p>
@@ -60,7 +55,7 @@ export default function Skills(props)  {
             <h4 className="py-4 text-teal-600">Technology Stack</h4>
             <p className="text-gray-800 py-1">Google Cloud Platform</p>
             <p className="text-gray-800 py-1">IoT Core, PubSub, Cloud Functions, Firebase</p>
-            <p className="text-gray-800 py-1">Terraform</p>
+            <p className="text-gray-800 py-1">Terraform, Docker</p>
           </div>
         </div>
       </section>
