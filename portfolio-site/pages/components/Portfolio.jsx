@@ -12,7 +12,7 @@ export default function Portfolio() {
     return (
         <section>
           <div>
-            <h3 className="text-3xl py-1">Portfolio</h3>
+            <h3 className="text-3xl py-1 text-teal-600 font-medium">Portfolio</h3>
             <p className="text-md py-2 leading-8 text-gray-800">
               Since the beggining of my journey as a freelance developer, I&aposve
               done remote work for

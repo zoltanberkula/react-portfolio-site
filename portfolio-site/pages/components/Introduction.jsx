@@ -6,7 +6,7 @@ import {
   AiFillGithub,
 } from "react-icons/ai";
 //FILES_BEGIN
-import profilePic from "../../public/dev-zolko.png";
+import profilePic from "../../public/dev-zolko.jpg";
 //FILES_END
 export default function Introduction(props) {
     return (
@@ -27,9 +27,10 @@ export default function Introduction(props) {
             </p>
           </div>
           <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <AiFillInstagram />
-            <AiFillLinkedin />
-            <AiFillGithub />
+            {/* <AiFillInstagram><a href="https://www.instagram.com/zltn_brkl/"></a></AiFillInstagram> */}
+            <a href="https://www.instagram.com/zltn_brkl/"><AiFillInstagram /></a>
+            <a href="https://www.linkedin.com/in/zolt%C3%A1n-berkula-ba44a91b0/"><AiFillLinkedin /></a>
+            <a href="https://github.com/Zolko1995"><AiFillGithub /></a>
           </div>
           <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
             <Image src={profilePic} layout="fill" objectFit="cover" alt="" />
