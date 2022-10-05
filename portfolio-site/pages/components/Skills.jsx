@@ -1,16 +1,14 @@
 import React from 'react';
 import Image from "next/image";
 //FILES_BEGIN
-import design from "../../public/design.png";
 import code from "../../public/code.png";
-import consulting from "../../public/consulting.png";
 //FILES_END
 export default function Skills(props)  {
     return (
         <section>
         <div>
-          <h3 className="text-3xl py-1 text-teal-600 font-medium">Experience and skills</h3>
-          <p className="text-md py-2 leading-8 text-gray-800">
+          <h3 className="text-3xl py-1 font-medium text-textColor_LightMode dark:text-textColor_DarkMode">Experience and skills</h3>
+          <p className="text-md py-2 leading-8 text-textColor_LightMode dark:text-textColor_DarkMode">
             Since the beggining of my journey as a sofware engineer, Ive
             gained experience and skills in several technologies consulted and collaborated
             with talented people to develop <span className="text-teal-500"> hardware, </span><span className="text-teal-500">software</span> and <span className="text-teal-500">firmware </span>for products intended for both business
@@ -18,9 +16,9 @@ export default function Skills(props)  {
           </p>
         </div>
         <div className="lg:flex gap-10">
-          <div className="text-center shadow-lg p-10 rounded-xl my-10  dark:bg-white dark:text-black">
+          <div className="text-center shadow-2xl shadow-gray-800 p-10 rounded-xl my-10 bg-bgColor_CardLight dark:bg-bgColor_CardDark dark:text-black">
             <Image src={code} width={100} height={100} alt="" />
-            <h3 className="text-lg font-medium pt-8 pb-2">
+            <h3 className="text-lg font-medium pt-8 pb-2 text-textColor_LightMode dark:text-textColor_DarkMode">
               Embedded Systems & IoT
             </h3>
             <p className="py-2 ">
@@ -31,7 +29,7 @@ export default function Skills(props)  {
             <p className="text-gray-800 py-1">Arduino/ESP-IDF</p>
             <p className="text-gray-800 py-1">PlatformIO</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="text-center shadow-2xl shadow-gray-800 p-10 rounded-xl my-10 bg-bgColor_CardLight dark:bg-bgColor_CardDark">
             <Image src={code} width={100} height={100} alt="" />
             <h3 className="text-lg font-medium pt-8 pb-2">
               Web Development
@@ -44,7 +42,7 @@ export default function Skills(props)  {
             <p className="text-gray-800 py-1">React.js</p>
             <p className="text-gray-800 py-1">TailwindCSS</p>
           </div>
-          <div className="text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white">
+          <div className="text-center shadow-2xl shadow-gray-800 p-10 rounded-xl my-10 bg-bgColor_CardLight dark:bg-bgColor_CardDark">
             <Image src={code} width={100} height={100} alt="" />
             <h3 className="text-lg font-medium pt-8 pb-2">
               Cloud, Backend & DevOps
