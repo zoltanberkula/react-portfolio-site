@@ -40,7 +40,7 @@ export default function Introduction(props) {
             <a href={liURL}>{props.arg ? <AiFillLinkedin className="dark:text-iconColor_SocialDark" /> : <AiOutlineLinkedin className="text-iconColor_SocialLight"/>}</a>
             <a href={ghURL}>{props.arg ? <AiFillGithub className="dark:text-iconColor_SocialDark" /> : <AiOutlineGithub className="text-iconColor_SocialLight"/>}</a>
           </div>
-          <div className="relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 ">
+          <div className="shadow-2xl shadow-gray-800 border-4 relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-textColor_LightMode dark:border-textColor_DarkMode ">
             {props.arg ? <Image src={profilePicDark} layout="fill" objectFit="cover" alt="" /> :
             <Image src={profilePic} layout="fill" objectFit="cover" alt="" />}
           </div>

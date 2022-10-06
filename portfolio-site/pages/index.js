@@ -6,6 +6,7 @@ import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Portfolio from "./components/Portfolio";
 import NavDock from "./components/NavDock";
+import Education from "./components/Education";
 //COMPONENTS_END
 export default function Resume() {
   const [darkMode, setDarkMode] = useState(false);
@@ -20,8 +21,8 @@ export default function Resume() {
         <Navbar arg={darkMode} cb={setDarkMode} />
         <Introduction arg={darkMode} />
         <Skills />
-        <Skills />
-        <Portfolio />
+        <Education />
+        {/* <Portfolio /> */}
       </main>
     </div>
   );
