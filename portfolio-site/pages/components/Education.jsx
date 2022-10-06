@@ -48,7 +48,7 @@ export default function Education(props)  {
             <p className="py-2 ">
             Teaching of English Language and literature and Computer Science
             </p>
-            <h4 className="py-4 text-teal-600">Master's degree</h4>
+            <h4 className="py-4 text-teal-600">Master&aposs degree</h4>
             <p className="text-gray-800 py-1"><span className="font-medium">Thesis: </span>The opportunities of the Arduino development platform in education.</p>
           </div>
           <div className="text-center shadow-2xl shadow-gray-800 p-10 rounded-xl my-10 bg-bgColor_CardLight dark:bg-bgColor_CardDark dark:bg-opacity-20 dark:shadow-md">
@@ -59,7 +59,7 @@ export default function Education(props)  {
             <p className="py-2 ">
             Teaching of English Language and literature and Computer Science
             </p>
-            <h4 className="py-4 text-teal-600">Bachelor's degree</h4>
+            <h4 className="py-4 text-teal-600">Bachelor&aposs degree</h4>
             <p className="text-gray-800 py-1"><span className="font-medium">Thesis: </span>The opportunities of the Arduino development platform.</p>
           </div>
         </div>
