@@ -8,14 +8,14 @@ import {
 export default function Navbar(props)  {
     return (
         <nav className="py-10 mb-12 flex justify-between">
-        <h1 className="text-xl font-medium text-textColor_LightMode dark:text-textColor_DarkMode">zoltanberkula</h1>
+        <h1 className="text-xl font-bold text-textColor_LightMode dark:text-textColor_DarkMode">zoltanberkula</h1>
         <ul className="flex items-center">
           <li>
             <a
               className="px-4 py-2 rounded-md ml-8 font-medium text-textColor_LightMode dark:text-textColor_DarkMode"
               href="#"
               >
-              <span className="text-xl font-medium text-textColor_LightMode dark:text-textColor_DarkMode">RESUME</span>
+              <span className="text-xl font-bold text-textColor_LightMode dark:text-textColor_DarkMode">RESUME</span>
             </a>
           </li>
               <li>
