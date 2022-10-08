@@ -4,54 +4,57 @@ import {AiOutlineCloud, AiFillCloud} from "react-icons/ai"
 import {HiChip, HiOutlineChip} from "react-icons/hi"
 import {RiWindow2Fill, RiWindow2Line} from "react-icons/ri";
 
+const cfg = require("../siteBuildConfig.json");
+const source = JSON.parse(JSON.stringify(cfg));
+
 export default function Skills(props)  {
     return (
         <section>
         <div>
-          <h3 className={props.source.siteBuildConfig.siteStyle.skillsH3Style}>{props.source.siteBuildConfig.sectionHeader}</h3>
+          <h3 className={source.skillsH3Style}>{source.sectionHeader}</h3>
         </div>
-        <div className={props.source.siteBuildConfig.siteStyle.skillsCardContainerStyle}>
-          <div className={props.source.siteBuildConfig.siteStyle.skillsCardStyle}>
-          {props.arg ? <HiChip style={{color: "#164e63"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle} /> :
-            <HiOutlineChip style={{color: "#111827"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle} />}
-            <h3 className={props.source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
-              {props.source.siteBuildConfig.embeddedSkillSetTitle}
+        <div className={source.skillsCardContainerStyle}>
+          <div className={source.skillsCardStyle}>
+          {props.arg ? <HiChip style={{color: "#164e63"}} size={source.skillsIconSize} className={source.skillsIconStyle} /> :
+            <HiOutlineChip style={{color: "#111827"}} size={source.skillsIconSize} className={source.skillsIconStyle} />}
+            <h3 className={source.skillsCardTitleStyle}>
+              {source.embeddedSkillSetTitle}
             </h3>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsDescrParagraphStyle}>
-               {props.source.siteBuildConfig.embeddedDescription}
+            <p className={source.skillsDescrParagraphStyle}>
+               {source.embeddedDescription}
             </p>
-            <h4 className={props.source.siteBuildConfig.siteStyle.skillsTechStackTitleStyle}>{props.source.siteBuildConfig.techStackTitle}</h4>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.embedded.lang}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.embedded.platform}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.embedded.ide}</p>
+            <h4 className={source.skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.embedded.lang}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.embedded.platform}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.embedded.ide}</p>
           </div>
-          <div className={props.source.siteBuildConfig.siteStyle.skillsCardStyle}>
-            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle} /> :
-            <RiWindow2Line style={{color: "#111827"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle} />}
-            <h3 className={props.source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
-              {props.source.webSkillSetTitle}
+          <div className={source.skillsCardStyle}>
+            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={source.skillsIconSize} className={source.skillsIconStyle} /> :
+            <RiWindow2Line style={{color: "#111827"}} size={source.skillsIconSize} className={source.skillsIconStyle} />}
+            <h3 className={source.skillsCardTitleStyle}>
+              {source.webSkillSetTitle}
             </h3>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsDescrParagraphStyle}>
-              {props.source.siteBuildConfig.webDescription}
+            <p className={source.skillsDescrParagraphStyle}>
+              {source.webDescription}
             </p>
-            <h4 className={props.source.siteBuildConfig.siteStyle.skillsTechStackTitleStyle}>{props.source.siteBuildConfig.techStackTitle}</h4>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.web.framework1}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.web.framework2}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.web.stylesheet}</p>
+            <h4 className={source.skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.web.framework1}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.web.framework2}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.web.stylesheet}</p>
           </div>
-          <div className={props.source.siteBuildConfig.siteStyle.skillsCardStyle}>
-          {props.arg ? <AiFillCloud style={{color: "#164e63"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle}/> :
-           <AiOutlineCloud style={{color: "#111827"}} size={props.source.siteBuildConfig.siteStyle.skillsIconSize} className={props.source.siteBuildConfig.siteStyle.skillsIconStyle}/>}
-            <h3 className={props.source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
-              {props.source.siteBuildConfig.cloudSkillSetTitle}
+          <div className={source.skillsCardStyle}>
+          {props.arg ? <AiFillCloud style={{color: "#164e63"}} size={source.skillsIconSize} className={source.skillsIconStyle}/> :
+           <AiOutlineCloud style={{color: "#111827"}} size={source.skillsIconSize} className={source.skillsIconStyle}/>}
+            <h3 className={source.skillsCardTitleStyle}>
+              {source.cloudSkillSetTitle}
             </h3>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsDescrParagraphStyle}>
-              {props.source.siteBuildConfig.cloudDescription}
+            <p className={source.skillsDescrParagraphStyle}>
+              {source.cloudDescription}
             </p>
-            <h4 className={props.source.siteBuildConfig.siteStyle.skillsTechStackTitleStyle}>{props.source.siteBuildConfig.techStackTitle}</h4>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.cloud.provider}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.cloud.services}</p>
-            <p className={props.source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{props.source.siteBuildConfig.techStack.cloud.tools}</p>
+            <h4 className={source.skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.cloud.provider}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.cloud.services}</p>
+            <p className={source.skillsTechParagraphStyle}>{source.techStack.cloud.tools}</p>
           </div>
         </div>
       </section>
