@@ -1,3 +1,4 @@
+import cntl from "cntl";
 import React from 'react';
 import Image from "next/image";
 import {
@@ -9,41 +10,108 @@ import {
   AiOutlineGithub,
 } from "react-icons/ai";
 
-const igURL = "https://www.instagram.com/zltn_brkl/";
-const liURL = "https://www.linkedin.com/in/zolt%C3%A1n-berkula-ba44a91b0/";
-const ghURL = "https://github.com/Zolko1995";
-
-//FILES_BEGIN
 import profilePic from "../../public/dev-zolko.jpg";
 import profilePicDark from "../../public/dev-zolko-dark.jpg";
-//FILES_END
+
+const jsoncfg = require("../../siteBuildConfig.json");
+const cfg = JSON.parse(JSON.stringify(jsoncfg));
+
+const textWrapper = cntl`
+  text-center
+  p-10
+`;
+const titleHeader = cntl`
+  text-5xl
+  py-2
+  font-medium
+  md:text-6xl
+  text-textColor_LightMode
+  dark:text-textColor_DarkMode
+`;
+
+const occupationHeader = cntl`
+  text-2xl
+  py-2
+  md:text-3xl
+  text-textColor_LightMode
+  dark:text-textColor_DarkMode
+`;
+
+const introductionWrapper = cntl`
+  text-md
+  py-5
+  leading-8
+  md:text-xl
+  max-w-lg
+  mx-auto
+  text-textColor_LightMode
+  dark:text-textColor_DarkMode
+`;
+
+const socialWrapper = cntl`
+  text-5xl
+  flex 
+  justify-center
+  gap-16
+  py-3
+  text-gray-600
+`;
+
+const socialIcon = cntl`
+  dark:text-iconColor_SocialDark
+  text-iconColor_SocialLight
+`;
+
+const profile = cntl`
+  mb-10
+  shadow-2xl
+  shadow-gray-800
+  border-4
+  relative
+  mx-auto
+  bg-gradient-to-b from-teal-500
+  rounded-full
+  w-80
+  h-80
+  mt-20
+  overflow-hidden
+  md:h-96
+  md:w-96
+  border-textColor_LightMode
+  dark:border-textColor_DarkMode 
+`;
+
 export default function Introduction(props) {
+  const source = cfg.siteBuildConfig.introductionSection;
+  const socialURL = cfg.siteBuildConfig.introductionSection;
     return (
       <div>
-          <div className="text-center p-10">
-            <h2 className="text-5xl py-2 font-medium md:text-6xl text-textColor_LightMode dark:text-textColor_DarkMode">
-              Zoltán Berkula
+          <div className={textWrapper}>
+            <h2 className={titleHeader}>
+              {source.title}
             </h2>
-            <h3 className="text-2xl py-2 md:text-3xl text-textColor_LightMode dark:text-textColor_DarkMode">
-              Junior Sofware Engineer
+            <h3 className={occupationHeader}>
+              {source.occupation}
             </h3>
-            <p className="text-md py-5 leading-8 md:text-xl max-w-lg mx-auto text-textColor_LightMode dark:text-textColor_DarkMode">
-              I am an ambitious self-taught software engineer with the interest
-              not only in virtual but also in physical realisations of
-              information technology, who likes new challenges and continuous
-              learning. My career goal is building software and hardware that
-              works together in harmony and makes our lives a bit easier.
+            <p className={introductionWrapper}>
+             {source.introduction}
             </p>
           </div>
-          <div className="text-5xl flex justify-center gap-16 py-3 text-gray-600">
-            <a href={igURL}>{props.arg ? <AiFillInstagram className="dark:text-iconColor_SocialDark"/> : <AiOutlineInstagram className="text-iconColor_SocialLight" />}</a>
-            <a href={liURL}>{props.arg ? <AiFillLinkedin className="dark:text-iconColor_SocialDark" /> : <AiOutlineLinkedin className="text-iconColor_SocialLight"/>}</a>
-            <a href={ghURL}>{props.arg ? <AiFillGithub className="dark:text-iconColor_SocialDark" /> : <AiOutlineGithub className="text-iconColor_SocialLight"/>}</a>
+          <div className={socialWrapper}>
+            <a href={socialURL.instagramURL}>
+              {props.arg ? <AiFillInstagram className={socialIcon}/> :
+            <AiOutlineInstagram className={socialIcon}/>}</a>
+            <a href={socialURL.linkedinURL}>
+              {props.arg ? <AiFillLinkedin className={socialIcon} /> :
+            <AiOutlineLinkedin className={socialIcon}/>}</a>
+            <a href={socialURL.githubURL}>
+              {props.arg ? <AiFillGithub className={socialIcon}/> :
+            <AiOutlineGithub className={socialIcon}/>}</a>
           </div>
-          <div className="mb-10 shadow-2xl shadow-gray-800 border-4 relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96 border-textColor_LightMode dark:border-textColor_DarkMode ">
+          <div className={profile}>
             {props.arg ? <Image src={profilePicDark} layout="fill" objectFit="cover" alt="" /> :
             <Image src={profilePic} layout="fill" objectFit="cover" alt="" />}
           </div>
-          </div>
+      </div>
     )
 }

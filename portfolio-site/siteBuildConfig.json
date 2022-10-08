@@ -1,42 +1,68 @@
 {
    "siteBuildConfig":{
       "title":"Zoltán Berkula Resume",
-      "sectionHeader":"Skills",
-      "embeddedSkillSetTitle":"Embedded Systems & IoT",
-      "webSkillSetTitle":"Web development",
-      "cloudSkillSetTitle":"Cloud, Backend & DevOps",
-      "techStackTitle":"Technology Stack",
-      "embeddedDescription":"Developing firmware for microcontrollers such as ATmega2560, ATmega328p, ESP8266, ESP32",
-      "webDescription":"Developing a dynamic web app for data telemetry and visualization with backend using close to hardware modules implemented from scratch.",
-      "cloudDescription":"Creating a Cloud Infrastructure used for data telemetry and remote control using services provided by GCP, easy infrastructure deployment using IaC.",
-      "techStack":{
-         "embedded":{
-            "lang":"C/C++",
-            "platform":"Arduino/ESP_IDF",
-            "ide":"PlatformIO, Espressif IDE"
-         },
-         "web":{
-            "framework1":"Node.js",
-            "framework2":"React.js",
-            "stylesheet":"TailwindCSS"
-         },
-         "cloud":{
-            "provider":"Google Cloud Platform",
-            "services":"IoT Core, PubSub, Cloud Functions, Firebase",
-            "tools":"Terraform, Docker"
+      "introductionSection":{
+         "title":"Zoltán Berkula",
+         "occupation":"Junior Software Engineer",
+         "introduction":"I am an ambitious self-taught software engineer with interest not only in virtual but also in physical realisations of information technology. I like new challenges and continuous learning. My goal is to build software and hardware that works together in harmony and makes our lives a bit easier.",
+         "instagramURL": "https://www.instagram.com/zltn_brkl/",
+         "linkedinURL": "https://www.linkedin.com/in/zolt%C3%A1n-berkula-ba44a91b0/",
+         "githubURL": "https://github.com/Zolko1995",
+         "profilePicLight": "../../public/dev-zolko.jpg",
+         "profilePicDark": "../../public/dev-zolko-dark.jpg"
+      },
+      "navbarSection":{
+         "title": "zoltanberkula",
+         "resumeTitle": "RESUME",
+         "resumeURL": "dqw"
+      },
+      "skillsSection":{
+         "sectionHeader":"Skills",
+         "embeddedSkillSetTitle":"Embedded Systems & IoT",
+         "webSkillSetTitle":"Web development",
+         "cloudSkillSetTitle":"Cloud, Backend & DevOps",
+         "techStackTitle":"Technology Stack",
+         "embeddedDescription":"Developing firmware for microcontrollers such as ATmega2560, ATmega328p, ESP8266, ESP32",
+         "webDescription":"Developing a dynamic web app for data telemetry and visualization with backend using close to hardware modules implemented from scratch.",
+         "cloudDescription":"Creating a Cloud Infrastructure used for data telemetry and remote control using services provided by GCP, easy infrastructure deployment using IaC.",
+         "techStack":{
+            "embedded":{
+               "lang":"C/C++",
+               "platform":"Arduino/ESP_IDF",
+               "ide":"PlatformIO, Espressif IDE"
+            },
+            "web":{
+               "framework1":"Node.js",
+               "framework2":"React.js",
+               "stylesheet":"TailwindCSS"
+            },
+            "cloud":{
+               "provider":"Google Cloud Platform",
+               "services":"IoT Core, PubSub, Cloud Functions, Firebase",
+               "tools":"Terraform, Docker"
+            }
          }
       },
-      "siteStyle":{
-         "mainStyle":"bg-bgColor_LightMode px-10 md:px-20 lg:px-40 dark:bg-bgColor_DarkMode",
-         "skillsIconStyle":"inline-block",
-         "skillsIconSize":80,
-         "skillsCardContainerStyle":"lg:flex gap-10",
-         "skillsCardStyle":"text-center shadow-2xl shadow-gray-800 p-10 rounded-xl my-10 bg-bgColor_CardLight dark:bg-bgColor_CardDark dark:bg-opacity-20 dark:shadow-md",
-         "skillsH3Style":"text-3xl py-1 font-medium text-textColor_LightMode dark:text-textColor_DarkMode",
-         "skillsCardTitleStyle":"text-lg text-textColor_LightMode dark:text-textColor_DarkMode font-bold pt-8 pb-2",
-         "skillsDescrParagraphStyle":"font-normal py-2 text-textColor_LightMode dark:text-textColor_DarkMode ",
-         "skillsTechStackTitleStyle":"py-4 text-textColor_LightMode font-bold text-textColor_LightMode dark:text-textColor_DarkMode",
-         "skillsTechParagraphStyle":"text-textColor_LightMode dark:text-textColor_DarkMode py-1"
+      "educationSection": {
+         "title": "Education",
+         "school3":{
+            "schoolName": "JSU",
+            "major": "Teaching of English Language and literature and Computer Science",
+            "thesis": "The opportunities of the ESP32 development platform in education.",
+            "degree": "Post Graduate Doctoral degree"
+         },
+         "school2":{
+            "schoolName": "JSU",
+            "major": "Teaching of English Language and literature and Computer Science",
+            "thesis": "The opportunities of the Arduino development platform in education.",
+            "degree": "Master's degree"
+         },
+         "school1":{
+            "schoolName": "JSU",
+            "major": "Teaching of English Language and literature and Computer Science",
+            "thesis": "The opportunities of the Arduino development platform.",
+            "degree": "Bachelor's degree"
+         }
       }
    }
 }
