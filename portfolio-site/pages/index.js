@@ -6,7 +6,6 @@ import Introduction from "./components/Introduction";
 import Skills from "./components/Skills";
 import Education from "./components/Education";
 //COMPONENTS_END
-//const source = JSON.parse(JSON.stringify(siteBuildConfig));
 
 const source = {
   siteBuildConfig: {
