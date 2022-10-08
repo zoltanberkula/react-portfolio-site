@@ -15,8 +15,8 @@ export default function Skills(props)  {
         </div>
         <div className={source.siteBuildConfig.siteStyle.skillsCardContainerStyle}>
           <div className={source.siteBuildConfig.siteStyle.skillsCardStyle}>
-          {props.arg ? <HiChip style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle} /> :
-            <HiOutlineChip style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle} />}
+          {props.arg ? <HiChip style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block" /> :
+            <HiOutlineChip style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block" />}
             <h3 className={source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
               {source.siteBuildConfig.embeddedSkillSetTitle}
             </h3>
@@ -29,8 +29,8 @@ export default function Skills(props)  {
             <p className={source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{source.siteBuildConfig.techStack.embedded.ide}</p>
           </div>
           <div className={source.siteBuildConfig.siteStyle.skillsCardStyle}>
-            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle} /> :
-            <RiWindow2Line style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle} />}
+            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block" /> :
+            <RiWindow2Line style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block" />}
             <h3 className={source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
               {source.siteBuildConfig.webSkillSetTitle}
             </h3>
@@ -43,8 +43,8 @@ export default function Skills(props)  {
             <p className={source.siteBuildConfig.siteStyle.skillsTechParagraphStyle}>{source.siteBuildConfig.techStack.web.stylesheet}</p>
           </div>
           <div className={source.siteBuildConfig.siteStyle.skillsCardStyle}>
-          {props.arg ? <AiFillCloud style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle}/> :
-           <AiOutlineCloud style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className={source.siteBuildConfig.siteStyle.skillsIconStyle}/>}
+          {props.arg ? <AiFillCloud style={{color: "#164e63"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block"/> :
+           <AiOutlineCloud style={{color: "#111827"}} size={source.siteBuildConfig.siteStyle.skillsIconSize} className="inline-block"/>}
             <h3 className={source.siteBuildConfig.siteStyle.skillsCardTitleStyle}>
               {source.siteBuildConfig.cloudSkillSetTitle}
             </h3>
