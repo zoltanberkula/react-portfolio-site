@@ -1,6 +1,6 @@
 import cntl from 'cntl';
 import React from 'react';
-import {MdOutlineSchool, MdSchool } from "react-icons/md";
+import { MdOutlineSchool, MdSchool } from "react-icons/md";
 
 const cfgjson = require("../../siteBuildConfig.json");
 const cfg = JSON.parse(JSON.stringify(cfgjson));
@@ -9,29 +9,6 @@ const educationIconSize = 80;
 const educationIconStyle = cntl`
   inline-block
 `;
-
-const skillsCardContainerStyle = cntl`
-  lg:flex
-  gap-10
-`;
-const skillsCardStyle = cntl`
-  text-center
-  shadow-2xl
-  shadow-gray-800
-  p-10
-  rounded-xl
-  my-10
-  bg-bgColor_CardLight
-  dark:bg-bgColor_CardDark
-  dark:bg-opacity-20 dark:shadow-md
-`;
-const skillsH3Style = cntl`
-  text-3xl
-  py-1
-  font-medium
-  text-textColor_LightMode
-  dark:text-textColor_DarkMode
-`; 
 const skillsCardTitleStyle = cntl`
   text-lg
   text-textColor_LightMode
@@ -40,25 +17,6 @@ const skillsCardTitleStyle = cntl`
   pt-8
   pb-2
 `;
-const skillsDescrParagraphStyle = cntl`
-  font-normal
-  py-2
-  text-textColor_LightMode
-  dark:text-textColor_DarkMode
-`; 
-const skillsTechStackTitleStyle = cntl`
-  py-4
-  text-textColor_LightMode
-  font-bold
-  text-textColor_LightMode
-  dark:text-textColor_DarkMode
-`; 
-const skillsTechParagraphStyle = cntl`
-  text-textColor_LightMode
-  dark:text-textColor_DarkMode
-  py-1
-`;
-
 const educationCardContainerStyle = cntl`
   lg:flex
   gap-10

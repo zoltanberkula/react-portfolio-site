@@ -1,7 +1,7 @@
 import cntl from 'cntl';
 import React from 'react';
-import {AiOutlineCloud, AiFillCloud} from "react-icons/ai"
-import {HiChip, HiOutlineChip} from "react-icons/hi"
+import {AiOutlineCloud, AiFillCloud} from "react-icons/ai";
+import {HiChip, HiOutlineChip} from "react-icons/hi";
 import {RiWindow2Fill, RiWindow2Line} from "react-icons/ri";
 
 const cfgjson = require("../../siteBuildConfig.json");
@@ -65,50 +65,50 @@ export default function Skills(props)  {
     return (
         <section>
         <div>
-          <h3 className={skillsH3Style}>{source.sectionHeader}</h3>
+          <h3 className={skillsH3Style}>{source.title}</h3>
         </div>
         <div className={skillsCardContainerStyle}>
           <div className={skillsCardStyle}>
-          {props.arg ? <HiChip style={{color: "#164e63"}} size={skillsIconSize} className={skillsIconStyle} /> :
-            <HiOutlineChip style={{color: "#111827"}} size={skillsIconSize} className={skillsIconStyle} />}
+          {props.arg ? <HiChip style={{color: "#164e63"}} size={skillsIconSize} className={skillsIconStyle}/> :
+            <HiOutlineChip style={{color: "#111827"}} size={skillsIconSize} className={skillsIconStyle}/>}
             <h3 className={skillsCardTitleStyle}>
-              {source.embeddedSkillSetTitle}
+              {source.skillSetTitle1}
             </h3>
             <p className={skillsDescrParagraphStyle}>
-               {source.embeddedDescription}
+               {source.skillSetDescription1}
             </p>
-            <h4 className={skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
-            <p className={skillsTechParagraphStyle}>{source.techStack.embedded.lang}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.embedded.platform}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.embedded.ide}</p>
+            <h4 className={skillsTechStackTitleStyle}>{source.skillSetTechStackTitle1}</h4>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack1.tech.lang}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack1.tech.platform}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack1.tech.ide}</p>
           </div>
           <div className={skillsCardStyle}>
-            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={skillsIconSize} className={skillsIconStyle} /> :
-            <RiWindow2Line style={{color: "#111827"}} size={skillsIconSize} className={skillsIconStyle} />}
+            {props.arg ? <RiWindow2Fill style={{color: "#164e63"}} size={skillsIconSize} className={skillsIconStyle}/> :
+            <RiWindow2Line style={{color: "#111827"}} size={skillsIconSize} className={skillsIconStyle}/>}
             <h3 className={skillsCardTitleStyle}>
-              {source.webSkillSetTitle}
+              {source.skillSetTitle2}
             </h3>
             <p className={skillsDescrParagraphStyle}>
-              {source.webDescription}
+              {source.skillSetDescription2}
             </p>
-            <h4 className={skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
-            <p className={skillsTechParagraphStyle}>{source.techStack.web.framework1}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.web.framework2}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.web.stylesheet}</p>
+            <h4 className={skillsTechStackTitleStyle}>{source.skillSetTechStackTitle2}</h4>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack2.tech.framework1}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack2.tech.framework2}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack2.tech.stylesheet}</p>
           </div>
           <div className={skillsCardStyle}>
           {props.arg ? <AiFillCloud style={{color: "#164e63"}} size={skillsIconSize} className={skillsIconStyle}/> :
            <AiOutlineCloud style={{color: "#111827"}} size={skillsIconSize} className={skillsIconStyle}/>}
             <h3 className={skillsCardTitleStyle}>
-              {source.cloudSkillSetTitle}
+              {source.skillSetTitle3}
             </h3>
             <p className={skillsDescrParagraphStyle}>
-              {source.cloudDescription}
+              {source.skillSetDescription3}
             </p>
-            <h4 className={skillsTechStackTitleStyle}>{source.techStackTitle}</h4>
-            <p className={skillsTechParagraphStyle}>{source.techStack.cloud.provider}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.cloud.services}</p>
-            <p className={skillsTechParagraphStyle}>{source.techStack.cloud.tools}</p>
+            <h4 className={skillsTechStackTitleStyle}>{source.skillSetTechStackTitle3}</h4>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack3.tech.provider}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack3.tech.services}</p>
+            <p className={skillsTechParagraphStyle}>{source.skillSetTechStack3.tech.tools}</p>
           </div>
         </div>
       </section>

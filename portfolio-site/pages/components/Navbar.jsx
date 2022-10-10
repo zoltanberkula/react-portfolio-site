@@ -14,19 +14,16 @@ const nav = cntl`
   flex
   justify-between
 `;
-
 const navHeader = cntl`
   text-xl
   font-bold
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const navUl = cntl`
   flex
   items-center
 `;
-
 const resumeSection = cntl`
   px-4
   py-2
@@ -36,14 +33,12 @@ const resumeSection = cntl`
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const resumeButton = cntl`
   text-xl
   font-bold
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const modeSelectLight = cntl`
   cursor-pointer
   text-2xl

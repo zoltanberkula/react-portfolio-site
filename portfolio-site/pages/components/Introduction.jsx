@@ -28,7 +28,6 @@ const titleHeader = cntl`
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const occupationHeader = cntl`
   text-2xl
   py-2
@@ -36,7 +35,6 @@ const occupationHeader = cntl`
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const introductionWrapper = cntl`
   text-md
   py-5
@@ -47,7 +45,6 @@ const introductionWrapper = cntl`
   text-textColor_LightMode
   dark:text-textColor_DarkMode
 `;
-
 const socialWrapper = cntl`
   text-5xl
   flex 
@@ -56,12 +53,10 @@ const socialWrapper = cntl`
   py-3
   text-gray-600
 `;
-
 const socialIcon = cntl`
   dark:text-iconColor_SocialDark
   text-iconColor_SocialLight
 `;
-
 const profile = cntl`
   mb-10
   shadow-2xl
@@ -83,7 +78,6 @@ const profile = cntl`
 
 export default function Introduction(props) {
   const source = cfg.siteBuildConfig.introductionSection;
-  const socialURL = cfg.siteBuildConfig.introductionSection;
     return (
       <div>
           <div className={textWrapper}>
@@ -98,13 +92,13 @@ export default function Introduction(props) {
             </p>
           </div>
           <div className={socialWrapper}>
-            <a href={socialURL.instagramURL}>
+            <a href={source.instagramURL}>
               {props.arg ? <AiFillInstagram className={socialIcon}/> :
             <AiOutlineInstagram className={socialIcon}/>}</a>
-            <a href={socialURL.linkedinURL}>
+            <a href={source.linkedinURL}>
               {props.arg ? <AiFillLinkedin className={socialIcon} /> :
             <AiOutlineLinkedin className={socialIcon}/>}</a>
-            <a href={socialURL.githubURL}>
+            <a href={source.githubURL}>
               {props.arg ? <AiFillGithub className={socialIcon}/> :
             <AiOutlineGithub className={socialIcon}/>}</a>
           </div>
