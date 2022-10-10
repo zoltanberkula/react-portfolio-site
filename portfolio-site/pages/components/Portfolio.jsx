@@ -1,5 +1,5 @@
-// import React from 'react';
-// import Image from "next/image";
+import React from 'react';
+import Image from "next/image";
 // //FILES_BEGIN
 // // import web1 from "../../public/web1.png";
 // // import web2 from "../../public/web2.png";
@@ -8,7 +8,7 @@
 // // import web5 from "../../public/web5.png";
 // // import web6 from "../../public/web6.png";
 // //FILES_END
-// export default function Portfolio() {
+export default function Portfolio() {
 //     return (
 //         <section>
 //           <div>
@@ -86,4 +86,4 @@
 //           </div>
 //         </section>
 //     )
-// }
+}
